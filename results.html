@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="title" href="https://k0s4.github.io/main-page/"
+        >K0S4.github.io</a
+      >
+    </header>
+    <main>
+      <h1 id="wpm"></h1>
+      <a href="index.html"><button class="button">Restart</button></a>
+      </main>
+      <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const wpmParam = urlParams.get("wpm");
+        document.getElementById("wpm").innerHTML = wpmParam + " WPM";
+      </script>
+  </body>
+</html>

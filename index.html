@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="title" href="https://k0s4.github.io/main-page/"
+        >K0S4.github.io</a
+      >
+    </header>
+    <main>
+      <div class="container">
+          <p id="timer">Time: ---</p>
+          <input
+            onchange="setTimeValue()"
+            id="time"
+            type="number"
+            placeholder="time in seconds"
+            class="input"
+            />
+        <input
+          oninput="WordCount()"
+          id="text"
+          placeholder="type here"
+          disabled
+          class="input"
+        />
+        <p id="words">Words: 0</p>
+        <a href="index.html"><button class="button">Restart</button></a>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
